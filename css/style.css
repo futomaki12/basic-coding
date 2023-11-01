@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 h1 {
 	font-size: 24px;
 	color: #3d59bf;
+    font-family: 'Roboto', sans-serif;
 }
