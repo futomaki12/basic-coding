@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box
+}
+
+#top {
+	background-color: rgb(115, 155, 41);
+	padding: 20px 10px 15px;
+	border-color: yellow;
+	border-style: double;
+	border-width: 15px;
+	margin: auto;
+	color: white;
+	text-align: center;
+	padding: 30px;
+}
+
+#projectlist {
+	background-color: black;
+	max-width: 750px;
+}
+
+a {
+	color: white;
+}
