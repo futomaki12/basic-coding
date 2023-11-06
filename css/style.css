@@ -8,11 +8,11 @@
 
 body {
 	background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fc71bf33-349e-46d8-becc-4a371e09e385/dawcqaj-495934c0-3922-44e6-95b6-648f7365403f.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZjNzFiZjMzLTM0OWUtNDZkOC1iZWNjLTRhMzcxZTA5ZTM4NVwvZGF3Y3Fhai00OTU5MzRjMC0zOTIyLTQ0ZTYtOTViNi02NDhmNzM2NTQwM2YuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.on-IZtvi3FDimjBWjPzB-mHmQ3gOFzqEMux6WOSQVQQ);
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin: auto;
-	max-width: 1000px;
+	min-height: 900px;
 }
 
 #top {
@@ -24,13 +24,9 @@ body {
 	font-family: 'Pixelify Sans';
 	font-size: 20px;
 	margin: auto;
-	position: fixed;
 	color: white;
 	text-align: center;
 	padding: 30px;
-	top: 0;
-	left: 0;
-	right: 0;
 }
 
 #top span {
@@ -46,8 +42,11 @@ body {
 	font-size: 18px;
 	justify-content: center;
 	position: relative;
-	height: 100px;
-	top: 180px;
+	min-height: 100px;
+	max-width: 1000px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 a.project1 {
