@@ -35,56 +35,32 @@ body {
 }
 
 #projectlist a {
+	background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);
+	margin: 10px;
+	padding: 15px 45px;
+	transition: 0.5s;
+
 	align-items: center;
-	color: white;
+	background-size: 200% auto;
+	border-radius: 10px;
 	display: flex;
+	color: white;            
 	font-family: 'Pixelify Sans';
 	font-size: 18px;
 	justify-content: center;
 	position: relative;
+	
 	min-height: 100px;
 	max-width: 1000px;
 	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-a.project1 {
-	background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);
-	margin: 10px;
-	padding: 15px 45px;
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
-	transition: 0.5s;
-	background-size: 200% auto;
-	color: white;            
-	border-radius: 10px;
-	display: block;
 }
 
-a.project1:hover {
-	background-position: center;
-	box-shadow: 0 0 20px olivedrab;
-	color: #fff;
-	text-decoration: none;
-}
-
-a.project2 {
-	background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);
-	margin: 10px;
-	padding: 15px 45px;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	transition: 0.5s;
-	background-size: 200% auto;
-	color: white;            
-	border-radius: 10px;
-	display: block;
-}
-
-a.project2:hover {
+#projectlist a:hover {
 	background-position: center;
 	box-shadow: 0 0 20px olivedrab;
 	color: #fff;
