@@ -3,60 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Coding</title>
+    <title>XYZ Zoo</title>
+	<link rel="stylesheet" href="/xyz-zoo/style.css">
 </head>
-<body>
-    <h1>XYZ Zoo Animal List</h1>
-    <img src="img/zoo.jpg" width="1000">
-    <ol>
-        <li>
-            <h2>Feline</h2>
-            <ul>
-                <li>
-                    <h3>Lynx</h3>
-                    <a target="_blank" href="img/lynx.jpg"><img src="img/lynx.jpg" alt="Lynx" width="500"></a>
-                </li>
-                <li>
-                    <h3>Lion</h3>
-                    <a target="_blank" href="img/lion.jpg"><img src="img/lion.jpg" width="500" alt="Lion"></a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <h2>Canine</h2>
-            <ul>
-                <li>
-                    <h3>Wolf</h3>
-                    <a target="_blank" href="img/wolf.jpg"><img src="img/wolf.jpg" width="500" alt="Wolf"></a>
-                </li>
-                <li>
-                    <h3>Coyote</h3>
-                    <a target="_blank" href="img/coyote.jpg"><img src="img/coyote.jpg" width="500" alt="Coyote"></a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <h2>Bird</h2>
-            <ul>
-                <li>
-                    <h3>Parrot</h3>
-                    <a target="_blank" href="img/parrot.jpg"><img src="img/parrot.jpg" width="500" alt="Parrot"></a>
-                </li>
-                <li>
-                    <h3>Owl</h3>
-                    <a target="_blank" href="img/owl.jpg"><img src="img/owl.jpg" width="500" alt="Owl"></a>
-                </li>
-            </ul>
-        </li>
-    </ol>
-    <h2>Source</h2>
-    <ol>
-        <li>
-            <a href="https://pexels.com/">Pexels</a>
-        </li>
-        <li>
-            <a href="https://pixabay.com/">Pixabay</a>
-        </li>
-    </ol>
+<body id="zoo">
+    <div class="top">
+		<h1>XYZ Zoo Animal List</h1>
+	</div>
+    <div class="content">
+        <ol class="animal-list">
+            <li>
+                <h2>Feline</h2>
+                <ul class="familia-list">
+                    <li>
+                        <div>
+                            <h3>Lynx</h3>
+                            <a target="_blank" href="img/lynx.jpg"><img src="img/lynx.jpg" alt="Lynx" width="500"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3>Lion</h3>
+                            <a target="_blank" href="img/lion.jpg"><img src="img/lion.jpg" width="500" alt="Lion"></a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h2>Canine</h2>
+                <ul class="familia-list">
+                    <li>
+                        <div>
+                            <h3>Wolf</h3>
+                            <a target="_blank" href="img/wolf.jpg"><img src="img/wolf.jpg" width="500" alt="Wolf"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3>Coyote</h3>
+                            <a target="_blank" href="img/coyote.jpg"><img src="img/coyote.jpg" width="500" alt="Coyote"></a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h2>Bird</h2>
+                <ul class="familia-list">
+                    <li>
+                        <div>
+                            <h3>Parrot</h3>
+                            <a target="_blank" href="img/parrot.jpg"><img src="img/parrot.jpg" width="500" alt="Parrot"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3>Owl</h3>
+                            <a target="_blank" href="img/owl.jpg"><img src="img/owl.jpg" width="500" alt="Owl"></a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <div id="bottom">
+    <span><h2>Source</h2></span>
+        <ol id="sourcelist">
+            <li>
+                <a href="https://pexels.com/">Pexels</a>
+            </li>
+            <li>
+                <a href="https://pixabay.com/">Pixabay</a>
+            </li>
+        </ol>
+    </div>
 </body>
 </html>

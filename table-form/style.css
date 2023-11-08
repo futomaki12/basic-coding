@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box
+}
+
+#tb-form {
+    background: rgb(237,192,120);
+    background: linear-gradient(to right, rgba(237,192,120,1) 0%, rgba(245,119,12,1) 35%, rgba(237,192,120,1) 100%) center;
+    padding: 10px;
+}
+
+.container {
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 20px;
+}
