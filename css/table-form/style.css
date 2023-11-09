@@ -6,7 +6,6 @@
 	box-sizing: border-box
 }
 
-/*desktop*/
 #tb-form {
     background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     background-attachment: fixed;
@@ -15,15 +14,19 @@
     display: block;
 }
 
+
 .container {
     background-color: aliceblue;
     border-radius: 15px;
     box-shadow: 0 0 40px rgb(0, 0, 0);
     margin: 30px 300px;
+    max-width: 100%;
     padding: 25px;
 }
 
 .tb {
+    border-bottom: solid 5px #00bf72;
+    padding-bottom: 30px;
     text-align: center;
 }
 
@@ -118,4 +121,23 @@ background: linear-gradient(180deg, rgba(88,94,101,1) 0%, rgba(118,127,135,1) 50
     border: none;
     border-radius: 5px;
     color: white;
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        margin: auto;
+        padding: 0 10px 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: auto;
+        padding: 0 10px 15px;
+    }
+
+@media only screen and (max-width: 425px) {
+    .familia-list li{
+        width: 100%;
+    }
 }
