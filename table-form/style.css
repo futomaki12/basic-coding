@@ -32,7 +32,10 @@
 }
 
 .tb h2, h4 {
+    margin-bottom: 10px;
 }
+
+.tb
 
 .tb1 th {
     background-color: rgba(253,187,45,1);
