@@ -39,7 +39,6 @@ body {
 
 .container {
 	background: url(../../xyz-zoo/img/zoo.jpg) center no-repeat;
-	background-attachment: fixed;
 	background-size: cover;
 	padding: 20px;
 	position: relative;
@@ -122,10 +121,6 @@ body {
 		border: none;
 		background: none;
 		color: #fff;
-	}
-
-	.container {
-		background-attachment: fixed;
 	}
 
 	.familia-list {
