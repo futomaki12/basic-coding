@@ -33,7 +33,7 @@ body {
 
 .container {
 	background: url(../../xyz-zoo/img/zoo.jpg) center no-repeat;
-	background-attachment: local;
+	background-attachment: fixed;
 	background-size: cover;
 	padding: 20px;
 }
