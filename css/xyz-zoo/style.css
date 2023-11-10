@@ -33,7 +33,7 @@ body {
 
 .container {
 	background: url(../../xyz-zoo/img/zoo.jpg) center no-repeat;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-size: cover;
 	padding: 20px;
 }
@@ -112,7 +112,7 @@ body {
 @media only screen and (min-width:320px) and (max-width: 1090px) {
 	
 	.container {
-		background-attachment: fixed;
+		background-attachment: scroll;
 	}
 
 	.familia-list {
