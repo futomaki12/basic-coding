@@ -29,7 +29,9 @@ body {
 }
 
 .container {
-	background: url(../xyz-zoo/img/zoo.jpg) center no-repeat;
+	background: url(/xyz-zoo/img/zoo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 20px;
 }
