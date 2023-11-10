@@ -16,7 +16,7 @@
 	border-style: double;
 	border-width: 15px;
 	
-	color: rgba(229,199,128,1);
+	color: rgb(156, 134, 84);
 	font-family: 'Pixelify Sans';
 	font-size: 20px;
 	text-align: center;
@@ -39,7 +39,6 @@ body {
 
 .container {
 	background: url(../../xyz-zoo/img/zoo.jpg) center no-repeat;
-	background-attachment: fixed;
 	background-size: cover;
 	padding: 20px;
 	position: relative;
