@@ -7,7 +7,7 @@
 }
 
 #zoo .top {
-	background-color: rgba(165, 164, 120, 0.61);
+	background-color: rgba(229,199,128,1);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -15,22 +15,25 @@
 	border-color: rgb(255, 255, 255);
 	border-style: double;
 	border-width: 15px;
-
+	
+	color: rgb(255, 255, 255);
 	font-family: 'Pixelify Sans';
 	font-size: 20px;
-	color: rgb(0, 0, 0);
 	text-align: center;
+
 	padding: 30px;
 }
 /*yg ini dah kelar*/
 
 body {
 	background-color: antiquewhite;
+	font-family: 'Pixelify Sans';
+	text-transform: uppercase;
 }
 
 .container {
 	background: url(../../xyz-zoo/img/zoo.jpg) center no-repeat;
-	background-attachment: scroll;
+	background-attachment: local;
 	background-size: cover;
 	padding: 20px;
 }
@@ -42,6 +45,7 @@ body {
 .animal-list h2 {
 	background: linear-gradient(to right,  rgba(0,0,0,0) 10%,rgba(229,199,128,1) 50%,rgba(0,0,0,0) 90%);
     color: #fff;
+	font-size: 30px;
     max-width: 100%;
     padding: 10px;
 	text-align: center;
@@ -97,7 +101,6 @@ body {
 	font-size: 20px;
 	margin: auto;
 	text-align: center;
-    text-transform: uppercase;
 	text-decoration: none;
 }
 
