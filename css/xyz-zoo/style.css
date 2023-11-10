@@ -39,6 +39,7 @@ body {
 
 .container {
 	background: url(../../xyz-zoo/img/zoo.jpg) center no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
 	padding: 20px;
 	position: relative;
@@ -131,9 +132,5 @@ body {
 		padding: 0 0 15px;
 		max-width: 100%;
 		list-style: none;
-	}
-
-	#bottom {
-		position: fixed;
 	}
 }
