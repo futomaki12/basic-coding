@@ -18,23 +18,58 @@
 
 	font-family: 'Pixelify Sans';
 	font-size: 20px;
-	margin: auto;
 	color: rgb(0, 0, 0);
 	text-align: center;
 	padding: 30px;
 }
 /*yg ini dah kelar*/
 
-.container {
+body {
 	background-color: antiquewhite;
-	margin: auto;
-	max-width: 900px;
-	padding-bottom: 15px;
 }
 
-.animal-list ul {
+.container {
+	background: url(/xyz-zoo/img/zoo.jpg) center no-repeat;
+	background-size: cover;
+	padding: 20px;
+}
+
+.animal-list {
+	justify-content: center;
+	list-style: none;
+}
+.animal-list h2 {
+	background: linear-gradient(to right,  rgba(0,0,0,0) 10%,rgba(229,199,128,1) 50%,rgba(0,0,0,0) 90%);
+    color: #fff;
+    max-width: 100%;
+    padding: 10px;
+	text-align: center;
+	text-shadow: 2px 2px #000;
+}
+
+.familia-list {
+	background: #fff;
+    border-radius: 10px;
+	box-shadow: 0 0 40px rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+	
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 15px auto 15px;
+	max-width: 50%;
+    padding: 10px 15px;
+}
+
+.familia-list li {
+	max-width: 45%;
+	list-style: none;
+}
+
+.familia-list img {
+	display: block;
+	width: 100%;
 }
 
 #bottom span {
@@ -47,8 +82,6 @@
 
 #bottom {
 	position: relative;
-	left: 0;
-	bottom: 0;
 	padding: 10px 30px;
 	width: 100%;
 
@@ -71,3 +104,21 @@
     margin-left: 30px;
 }
 /*Bottom kelar*/
+
+@media only screen and (min-width:320px) and (max-width: 1090px) {
+	
+	.container {
+		background-attachment: fixed;
+	}
+
+	.familia-list {
+		background-attachment: local;
+		padding: 0 0 15px;
+		max-width: 100%;
+		list-style: none;
+	}
+
+	#bottom {
+		background-attachment: fixed;
+	}
+}
