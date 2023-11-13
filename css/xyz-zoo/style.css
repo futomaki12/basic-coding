@@ -83,6 +83,21 @@ body {
 	width: 100%;
 }
 
+.btn-home {
+    background-position: center;
+    border: none;
+    margin-right: 5px;
+    margin-bottom: 25px;
+    bottom: 0px;
+    right: 25px;
+    position: fixed;
+    transition: 0.4s;
+}
+
+.btn-home:hover {
+    transform: translateY(-10px);
+}
+
 #bottom span {
     background-color: white;
 	border-right: solid 5px rgb(156, 134, 84);

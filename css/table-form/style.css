@@ -14,14 +14,14 @@
     display: block;
 }
 
-
 .container {
     background-color: aliceblue;
     border-radius: 15px;
     box-shadow: 0 0 40px rgb(0, 0, 0);
-    margin: 30px 500px;
+    margin: 25px auto;
     max-width: 100%;
     padding: 25px;
+    width: 900px;
 }
 
 .tb {
@@ -102,30 +102,68 @@ form {
 }
 
 .form button {
-    background: linear-gradient(180deg, rgba(202,213,223,1) 0%, rgba(240,248,255,1) 50%, rgba(202,213,223,1) 100%);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-
-    color: black;
-    font-size: 15px;
-
+    box-shadow: 1px 1px 12px #000000;
+    color: #000000;
+    display: inline-block;
+    font-size: 16px;
+  
+    border-radius: 30em;
+    border-style: none;
     margin-top: 5px;
     padding: 5px;
+    position: relative;
     width: 100%;
+    z-index: 1;
+    overflow: hidden;
+  
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .form button::before {
+    background-color: black;
+    content: "";
+  
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    transform: translateX(-101%);
+    transition: all .3s ease;
+    z-index: -1;
+  }
+  
+  .form button:hover {
+    color: #ffffff;
+    transition: all .3s ease;rgb(255, 255, 255)
+  }
+  
+  .form button:hover::before {
+    transform: translateX(0);
+  }
+
+.btn-home {
+    background-position: center;
+    border: none;
+    margin-right: 5px;
+    margin-bottom: 25px;
+    bottom: 0px;
+    right: 25px;
+    position: fixed;
+    transition: 0.4s;
 }
 
-.form button:hover {
-    background: rgb(88,94,101);
-background: linear-gradient(180deg, rgba(88,94,101,1) 0%, rgba(118,127,135,1) 50%, rgba(88,94,101,1) 100%);
-    border: none;
-    border-radius: 5px;
-    color: white;
+.btn-home:hover {
+    transform: translateY(-10px);
 }
 
 @media only screen and (min-width:320px) and (max-width: 1090px) {
     .container {
-        margin: 15px 0px;
+        margin: 15px auto;
         padding: 15px;
+        max-width: 100%;
     }
 }
