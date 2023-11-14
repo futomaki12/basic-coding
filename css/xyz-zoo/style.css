@@ -74,6 +74,7 @@ body {
 }
 
 .familia-list li {
+	padding-top: 10px;
 	max-width: 45%;
 	list-style: none;
 }
@@ -142,5 +143,18 @@ body {
 		padding: 0 0 15px;
 		max-width: 100%;
 		list-style: none;
+	}
+
+	.btn-home {
+        background-color: #3e8bc1;
+        position: fixed;
+        display: block;
+        
+        margin: 0 auto;
+        z-index: 9999;
+    }
+
+    .btn-home:hover {
+        transform: none;
 	}
 }

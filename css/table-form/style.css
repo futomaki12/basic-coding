@@ -40,7 +40,7 @@
 
 .tb
 
-.tb1 th {
+.tb1 th, .tb2 th {
     background-color: rgba(253,187,45,1);
 }
 
@@ -52,8 +52,8 @@
     margin-top: 10px;
 }
 
-.tb2 th {
-    background-color: rgba(253,187,45,1);
+.tb1 td, .tb2 td {
+    background-color: #fff;
 }
 
 /*form*/
@@ -80,6 +80,7 @@ form {
 }
 
 .form input, .form select {
+    background-color: rgb(255, 255, 255);
     border: none;
     display: block;
     margin-top: 3px;
@@ -122,7 +123,7 @@ form {
   }
   
   .form button::before {
-    background-color: black;
+    background-color: rgb(75, 75, 75);
     content: "";
   
     width: 100%;
@@ -165,5 +166,22 @@ form {
         margin: 15px auto;
         padding: 15px;
         max-width: 100%;
+    }
+
+    .form button {
+        margin-top: 10px;
+    }
+
+    .btn-home {
+        background-color: #3e8bc1;
+        position: fixed;
+        display: block;
+        
+        margin: 0 auto;
+        z-index: 9999;
+    }
+
+    .btn-home:hover {
+        transform: none;
     }
 }
