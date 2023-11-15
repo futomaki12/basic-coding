@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box
+}
+
+body {
+    background-color: brown;
+    margin: 0px auto;
+	max-width: 50%;
+    padding: 0px 15px;
+}
+
+.container {
+    width: 990px;
+    height:  3850px;
+}
+
+.header {
+    position: relative;
+    top: 0px;
+    z-index: 1;
+}
+
+.menu-btn {
+    background-image: url("assets/Christmas-bg-mitsu-no-special-menu.png");
+    position: absolute;
+    top: 314px;
+    width: 990px;
+    height: 728px;
+}
+
+.btn-decoration {
+    position: absolute;
+    z-index: 2;
+}
+
+#menu-btn-decor1 {
+    margin: 145px auto 0px;
+}
+
+#menu-btn-decor2 {
+    position: relative;
+    top: -30px;
+}
+
+.btn-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+	
+	justify-content: space-around;
+	margin: 400px auto;
+}
+
+.btn-list ul > li {
+	display: inline;
+	list-style: none;
+}
+
+.btn-list img {
+    padding: 0px 25px;
+}
+
+.menu-container {
+    position: relative;
+    background-image: url(assets/Background.png);
+    top: 440px;
+}
