@@ -14,6 +14,7 @@ body {
 }
 
 .container {
+    font-family: 'Zen Old Mincho';
     width: 990px;
 }
 
@@ -64,8 +65,9 @@ body {
 }
 
 .menu-background {
-    background-image: url("assets/Background.png");
+    background: url("assets/Background.png") no-repeat;
     margin-top: 430px;
+    padding-bottom: 300px;
 }
 
 .decoration img {
@@ -73,48 +75,31 @@ body {
     position: absolute;
 }
 
+/* --- */
+
 .gyokai-kare {
     display: flex;
     flex-wrap: wrap;
-	
-	justify-content: space-around;
-    margin: 0px 30px 0px;
+    margin: 0px 30px 15px;
     padding: 10px 15px;
 }
 
-.menu-title1 img {
-    margin-top: 225px;
+.menu-title-border-gyokaikare img {
+    margin-top: 230px;
 }
 
-.gyokai-kare > .menu-title1 h1 {
-    font-size: 72px;
-    font-family: "Zen Old Mincho";
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 7px 0px rgba(0, 0, 0, 1);
-    font-weight: bold;
-    line-height: 0.194;
-
-    text-align: center;
-    position: absolute;
-    top: 1266px;
-    width: 45%;
-}
-
-.gyokai-kare > img {
-    position: absolute;
-    left: 100px;
-    
-    margin-right: 100px;
-}
-
-.gyokai-kare > .img-border {
+.menu-img {
     border-color: rgb(231, 192, 142);
     border-width: 5px;
     border-style: solid;
-    margin-top: 10px;
     position: relative;
-    width: 340px;
-    height: 340px;
+}
+
+.menu-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 .menu-desc {
@@ -122,9 +107,30 @@ body {
     border-width: 5px;
     border-style: solid;
     color: white;
-    justify-content: space-around;
-    margin-top: 20px;
+    margin-left: 20px;
     padding: 15px;
+    position: relative;
+}
+
+.menu-desc-gyuutanramen {
+    border-color: rgb(231, 192, 142);
+    border-width: 5px;
+    border-style: solid;
+    color: white;
+    margin-right: 20px;
+    padding: 15px;
+    position: relative;
+}
+
+.menu-desc > h2 {
+    padding-bottom: 5px;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.menu-notes {
+    padding-top: 25px;
 }
 
 /* --- */
@@ -132,28 +138,13 @@ body {
 .gyuutan-ramen {
     display: flex;
     flex-wrap: wrap;
-	
 	justify-content: space-around;
-    margin: 0px 30px 0px;
+    margin: 0px 30px 15px;
     padding: 10px 15px;
 }
 
-.menu-title1 img {
-    margin-top: 225px;
-}
-
-.gyuutan-ramen > .menu-title h1 {
-    font-size: 72px;
-    font-family: "Zen Old Mincho";
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 7px 0px rgba(0, 0, 0, 1);
-    font-weight: bold;
-    line-height: 0.194;
-
-    text-align: center;
-    position: absolute;
-    
-    width: 45%;
+.menu-title-border-gyuutanramen img {
+    margin-top: 122px;
 }
 
 /* --- */
@@ -165,4 +156,26 @@ body {
 	justify-content: space-around;
     margin: 0px 30px 0px;
     padding: 10px 15px;
+}
+
+.menu-title-border-hitsumabushi img {
+    margin-top: 45px;
+}
+
+/* --- */
+
+.footer {
+    margin: 250px 35px;
+    z-index: 55;
+}
+
+.footer h1 {
+    border-bottom: 1px solid;
+    border-width: 1px;
+    font-size: 48px;
+}
+
+.footer p {
+    font-size: 24px;
+    margin-top: 5px;
 }
