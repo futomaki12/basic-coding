@@ -27,7 +27,7 @@ body {
 .menu-btn {
     background-image: url("assets/Christmas-bg-mitsu-no-special-menu.png");
     position: absolute;
-    top: 314px;
+    top: 350px;
     width: 990px;
     height: 728px;
 }
@@ -38,12 +38,12 @@ body {
 }
 
 #menu-btn-decor1 {
-    margin: 145px auto 0px;
+    margin: 110px auto 0px;
 }
 
-#menu-btn-decor2 {
+#mitsu-no-special-menu-text {
     position: relative;
-    top: -30px;
+    top: -10px;
 }
 
 .btn-list {
@@ -53,6 +53,7 @@ body {
 	
 	justify-content: space-around;
 	margin: 400px auto;
+    z-index: 15;
 }
 
 .btn-list ul > li {
@@ -61,17 +62,16 @@ body {
 }
 
 .btn-list img {
-    padding: 0px 25px;
+    margin: 0px 25px;
 }
 
 .menu-background {
     background: url("assets/Background.png") no-repeat;
     margin-top: 430px;
-    padding-bottom: 300px;
 }
 
 .decoration img {
-    margin-top: 10px;
+    margin-top: 46px;
     position: absolute;
 }
 
@@ -80,39 +80,45 @@ body {
 .gyokai-kare {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px 30px 15px;
-    padding: 10px 15px;
+	justify-content: space-around;
+    margin-bottom: 70px;
 }
 
 .menu-title-border-gyokaikare img {
-    margin-top: 230px;
-}
-
-.menu-img {
-    border-color: rgb(231, 192, 142);
-    border-width: 5px;
-    border-style: solid;
-    position: relative;
+    margin-top: 275px;
 }
 
 .menu-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-right: 43px;
 }
 
-.menu-desc {
+.menu-content-gyuutanramen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.menu-img {
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 9999;
+    position: relative;
+}
+
+#menu-desc-gyokaikare {
     border-color: rgb(231, 192, 142);
     border-width: 5px;
     border-style: solid;
     color: white;
-    margin-left: 20px;
     padding: 15px;
-    position: relative;
 }
 
-.menu-desc-gyuutanramen {
+#menu-desc-gyuutanramen {
     border-color: rgb(231, 192, 142);
     border-width: 5px;
     border-style: solid;
@@ -122,15 +128,45 @@ body {
     position: relative;
 }
 
-.menu-desc > h2 {
+#menu-desc-hitsumabushi {
+    border-color: rgb(231, 192, 142);
+    border-width: 5px;
+    border-style: solid;
+    color: white;
+    margin-left: 20px;
+    padding: 15px;
+    position: relative;
+}
+
+#menu-desc-gyokaikare > h2 {
     padding-bottom: 5px;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
+#menu-desc-gyuutanramen> h2 {
+    padding-bottom: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#menu-desc-hitsumabushi > h2 {
+    padding-bottom: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.menu-option {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
 .menu-notes {
     padding-top: 25px;
+    font-size: 15px;
 }
 
 /* --- */
@@ -139,12 +175,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 	justify-content: space-around;
-    margin: 0px 30px 15px;
-    padding: 10px 15px;
-}
-
-.menu-title-border-gyuutanramen img {
-    margin-top: 122px;
+    margin-bottom: 70px;
 }
 
 /* --- */
@@ -152,30 +183,32 @@ body {
 .hitsumabushi {
     display: flex;
     flex-wrap: wrap;
-	
 	justify-content: space-around;
-    margin: 0px 30px 0px;
-    padding: 10px 15px;
-}
-
-.menu-title-border-hitsumabushi img {
-    margin-top: 45px;
+    margin-bottom: 25px;
 }
 
 /* --- */
 
+.clickable-coupon img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .footer {
-    margin: 250px 35px;
+    margin: 250px 35px 0;
     z-index: 55;
 }
 
-.footer h1 {
+
+.footer-text h1 {
     border-bottom: 1px solid;
     border-width: 1px;
     font-size: 48px;
 }
 
-.footer p {
+.footer-text p {
     font-size: 24px;
     margin-top: 5px;
+    padding-bottom: 30px;
 }
