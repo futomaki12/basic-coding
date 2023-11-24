@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;900&display=swap');
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
 }
 
 body {
@@ -13,7 +13,8 @@ body {
 .container {
     font-family: 'Zen Old Mincho';
     margin: auto;
-    max-width: max-content;
+    min-width: 320px;
+    max-width: 100%;
     width: 990px;
 }
 
@@ -48,25 +49,26 @@ body {
 }
 
 .button {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-	
-	justify-content: space-around;
-	margin-top: 420px;
+    margin-top: 420px;
     z-index: 15;
 }
-.button ul > li {
-	display: inline;
-	list-style: none;
+
+.button ul {
+    display: flex;
+    justify-content: space-evenly;
 }
-.menu-background {
+
+.button ul>li {
+    list-style: none;
+}
+
+.menu {
     background: url("assets/Background.png") no-repeat;
     margin-top: 430px;
 }
 
 .decoration img {
-    margin-top: 46px;
+    margin-top: 22px;
     position: absolute;
 }
 
@@ -75,17 +77,19 @@ body {
 #gyokai-kare {
     display: flex;
     flex-wrap: wrap;
-	justify-content: space-around;
+    justify-content: space-around;
     margin-bottom: 70px;
 }
 
 .menu-title-border-gyokaikare img {
     margin-top: 275px;
+    max-width: 100%;
     box-shadow: 0px 0 40px rgb(255, 200, 0)
 }
 
-.menu-title-border {
-    box-shadow: 0px 0 35px rgb(255, 200, 0)
+.menu-title-border img {
+    box-shadow: 0px 0 35px rgb(255, 200, 0);
+    max-width: 100%;
 }
 
 .menu-content {
@@ -138,21 +142,21 @@ body {
     position: relative;
 }
 
-.menu-desc-gyokaikare > h2 {
+.menu-desc-gyokaikare>h2 {
     padding-bottom: 5px;
     font-size: 40px;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
-.menu-desc-gyuutanramen> h2 {
+.menu-desc-gyuutanramen>h2 {
     padding-bottom: 5px;
     font-size: 40px;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
-.menu-desc-hitsumabushi > h2 {
+.menu-desc-hitsumabushi>h2 {
     padding-bottom: 5px;
     font-size: 40px;
     font-weight: bold;
@@ -174,7 +178,7 @@ body {
 #gyuutan-ramen {
     display: flex;
     flex-wrap: wrap;
-	justify-content: space-around;
+    justify-content: space-around;
     margin-bottom: 70px;
 }
 
@@ -183,7 +187,7 @@ body {
 #hitsumabushi {
     display: flex;
     flex-wrap: wrap;
-	justify-content: space-around;
+    justify-content: space-around;
     margin-bottom: 25px;
 }
 
@@ -194,6 +198,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-width: 300px;
+    max-width: 830px;
+    width: 90%;
 }
 
 .footer {
@@ -216,3 +222,74 @@ body {
     margin-top: 5px;
 }
 
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 990px;
+        width: 100%;
+    }
+
+    .header img {
+        width: 100%;
+    }
+
+    .menu-btn {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        top: 170px;
+        width: 100%;
+    }
+
+    .btn-decoration {
+        width: 100%;
+    }
+
+    #menu-btn-decor1 img {
+        position: absolute;
+        top: 50px;
+        width: 100%;
+    }
+
+    #mitsu-no-special-menu-text img {
+        position: absolute;
+        top: 25px;
+        width: 100%;
+    }
+
+    .button ul {
+        position: absolute;
+        top: 175px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .button ul li {
+        width: 25%;
+    }
+
+    .button ul li img {
+        width: 100%;
+    }
+
+    .decoration img {
+        margin-top: -127px;
+        position: absolute;
+        width: 100%;
+    }
+
+    .menu {
+        margin-top: 170px;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .menu-title-border-gyokaikare img {
+        margin-top: 155px;
+        max-width: 100%;
+    }
+    
+    .menu-title-border img {
+        max-width: 100%;
+    }
+    
+    
+}
