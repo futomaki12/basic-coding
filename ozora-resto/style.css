@@ -128,7 +128,6 @@ body {
     border-width: 5px;
     border-style: solid;
     color: white;
-    margin-right: 20px;
     padding: 15px;
     position: relative;
 }
@@ -214,7 +213,7 @@ body {
     margin-top: 5px;
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .container {
         max-width: 990px;
         width: 100%;
@@ -306,7 +305,7 @@ body {
     }
     
     .menu-desc-gyuutanramen {
-        margin: auto;
+        margin-right: 0px;
     }
 
     .menu-img {
@@ -317,26 +316,22 @@ body {
         width: 100%;
     }
     
-    .menu-desc-gyokaikare>h2 {
-        font-size: 35px;
+    .menu-desc>h2 {
+        font-size: 25px;
     }
     
     .menu-desc-gyuutanramen>h2 {
-        font-size: 35px;
-    }
-    
-    .menu-desc-hitsumabushi>h2 {
-        font-size: 35px;
+        font-size: 25px;
     }
     
     .menu-option {
-        margin-top: 15px;
-        font-size: 18px;
+        margin-top: 2px;
+        font-size: 12px;
     }
     
     .menu-notes {
-        padding-top: 25px;
-        font-size: 15px;
+        padding-top: 15px;
+        font-size: 12px;
     }
 
     /* --- */
@@ -344,7 +339,7 @@ body {
     #gyuutan-ramen {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         margin-bottom: 70px;
     }
 
@@ -362,9 +357,8 @@ body {
     /* --- */
 
     #hitsumabushi {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        display: block;
+        justify-content: center;
         margin-bottom: 25px;
     }
 
