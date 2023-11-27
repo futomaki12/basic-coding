@@ -114,7 +114,7 @@ body {
     position: relative;
 }
 
-.menu-desc-gyokaikare {
+.menu-desc {
     border-color: rgb(231, 192, 142);
     border-width: 5px;
     border-style: solid;
@@ -132,17 +132,7 @@ body {
     position: relative;
 }
 
-.menu-desc-hitsumabushi {
-    border-color: rgb(231, 192, 142);
-    border-width: 5px;
-    border-style: solid;
-    color: white;
-    margin-left: 20px;
-    padding: 15px;
-    position: relative;
-}
-
-.menu-desc-gyokaikare>h2 {
+.menu-desc>h2 {
     padding-bottom: 5px;
     font-size: 40px;
     font-weight: bold;
@@ -150,13 +140,6 @@ body {
 }
 
 .menu-desc-gyuutanramen>h2 {
-    padding-bottom: 5px;
-    font-size: 40px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.menu-desc-hitsumabushi>h2 {
     padding-bottom: 5px;
     font-size: 40px;
     font-weight: bold;
@@ -180,6 +163,14 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 70px;
+}
+
+.menu-img-gyuutanramen-phone {
+    display: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 9999;
+    position: relative;
 }
 
 /* --- */
@@ -271,7 +262,7 @@ body {
     }
 
     .decoration img {
-        margin-top: -127px;
+        margin-top: -99px;
         position: absolute;
         width: 100%;
     }
@@ -283,13 +274,98 @@ body {
     }
 
     .menu-title-border-gyokaikare img {
-        margin-top: 155px;
-        max-width: 100%;
+        margin-top: 170px;
+        width: 100%;
     }
     
     .menu-title-border img {
         max-width: 100%;
     }
     
+    .menu-content {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        margin-top: 5px;
+        margin: auto;
+    }
     
+    /* ---- */
+
+    .menu-content-gyuutanramen {
+        display: block;
+        text-align: center;
+        margin-top: 2px;
+        margin-right: 0px;
+        padding: 0px 5px;
+    }
+
+    .menu-desc {
+        margin: auto;
+    }
+    
+    .menu-desc-gyuutanramen {
+        margin: auto;
+    }
+
+    .menu-img {
+        margin: 20px auto;
+    }
+
+    .menu-img>img {
+        width: 100%;
+    }
+    
+    .menu-desc-gyokaikare>h2 {
+        font-size: 35px;
+    }
+    
+    .menu-desc-gyuutanramen>h2 {
+        font-size: 35px;
+    }
+    
+    .menu-desc-hitsumabushi>h2 {
+        font-size: 35px;
+    }
+    
+    .menu-option {
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    
+    .menu-notes {
+        padding-top: 25px;
+        font-size: 15px;
+    }
+
+    /* --- */
+
+    #gyuutan-ramen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 70px;
+    }
+
+    .menu-img-gyuutanramen {
+        display: none;
+    }
+
+    .menu-img-gyuutanramen-phone {
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        z-index: 9999;
+        position: relative;
+    }
+    /* --- */
+
+    #hitsumabushi {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 25px;
+    }
+
+    /* --- */
 }
