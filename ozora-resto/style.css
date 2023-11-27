@@ -14,7 +14,6 @@ body {
     font-family: 'Zen Old Mincho';
     margin: auto;
     min-width: 320px;
-    max-width: 100%;
     width: 990px;
 }
 
@@ -228,6 +227,7 @@ body {
         background-size: 100%;
         top: 170px;
         width: 100%;
+        position: absolute;
     }
 
     .btn-decoration {
