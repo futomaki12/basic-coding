@@ -14,6 +14,7 @@ body {
     font-family: 'Zen Old Mincho';
     margin: auto;
     min-width: 320px;
+    max-width: 100%;
     width: 990px;
 }
 
@@ -64,6 +65,7 @@ body {
 .menu {
     background: url("assets/Background.png") no-repeat;
     margin-top: 430px;
+    width: 990px;
 }
 
 .decoration img {
@@ -227,7 +229,6 @@ body {
         background-size: 100%;
         top: 170px;
         width: 100%;
-        position: absolute;
     }
 
     .btn-decoration {
