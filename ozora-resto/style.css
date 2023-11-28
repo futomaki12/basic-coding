@@ -328,7 +328,7 @@ body {
 
     .menu-img-gyuutanramen-phone {
         display: flex;
-        margin: 20px auto;
+        margin: 10px auto;
         z-index: 9999;
         position: relative;
     }
@@ -376,8 +376,16 @@ body {
 
     /* --- */
 
+    .clickable-coupon img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 830px;
+        width: 97%;
+    }
+
     .footer {
-        margin: 165px 35px 0;
+        margin: 150px 35px 0;
         z-index: 55;
     }
     
@@ -388,7 +396,7 @@ body {
     }
     
     .footer-text p {
-        font-size: 18px;
+        font-size: 17.5px;
         margin-top: 5px;
     }
 
