@@ -20,7 +20,6 @@ body {
 
 .header {
     position: relative;
-    top: 0px;
     z-index: 1;
 }
 
@@ -167,10 +166,6 @@ body {
 
 .menu-img-gyuutanramen-phone {
     display: none;
-    margin-top: auto;
-    margin-bottom: auto;
-    z-index: 9999;
-    position: relative;
 }
 
 /* --- */
@@ -188,7 +183,6 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-width: 300px;
     max-width: 830px;
     width: 90%;
 }
@@ -233,7 +227,7 @@ body {
     .btn-decoration {
         width: 100%;
     }
-
+    
     #menu-btn-decor1 img {
         position: absolute;
         top: 50px;
@@ -289,8 +283,6 @@ body {
         margin-top: 5px;
         margin: auto;
     }
-    
-    /* ---- */
 
     .menu-content-gyuutanramen {
         display: block;
@@ -298,6 +290,14 @@ body {
         margin-top: 2px;
         margin-right: 0px;
         padding: 0px 5px;
+    }
+
+    .menu-img {
+        width: 80%;
+    }
+
+    .menu-img-gyuutanramen-phone {
+        width: 80%;
     }
 
     .menu-desc {
@@ -312,7 +312,22 @@ body {
         margin: 20px auto;
     }
 
+    .menu-img-gyuutanramen {
+        display: none;
+    }
+
+    .menu-img-gyuutanramen-phone {
+        display: flex;
+        margin: 20px auto;
+        z-index: 9999;
+        position: relative;
+    }
+
     .menu-img>img {
+        width: 100%;
+    }
+
+    .menu-img-gyuutanramen-phone>img {
         width: 100%;
     }
     
@@ -343,19 +358,6 @@ body {
         margin-bottom: 70px;
     }
 
-    .menu-img-gyuutanramen {
-        display: none;
-    }
-
-    .menu-img-gyuutanramen-phone {
-        display: block;
-        margin-top: auto;
-        margin-bottom: auto;
-        z-index: 9999;
-        position: relative;
-    }
-    /* --- */
-
     #hitsumabushi {
         display: block;
         justify-content: center;
@@ -363,4 +365,21 @@ body {
     }
 
     /* --- */
+
+    .footer {
+        margin: 165px 35px 0;
+        z-index: 55;
+    }
+    
+    .footer-text h1 {
+        border-bottom: 1px solid;
+        border-width: 1px;
+        font-size: 35px;
+    }
+    
+    .footer-text p {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
 }
