@@ -252,6 +252,7 @@ body {
     }
 
     .button ul {
+        display: block;
         position: absolute;
         top: 180px;
         margin-top: 20px;
