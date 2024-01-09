@@ -7,50 +7,80 @@
 }
 
 body {
-    background-color: maroon;
+    background-color: #fff;
 }
 
 .container {
+    width: 100%;
+}
+
+#header-slider {
+    position: relative;
+	overflow: hidden;
+    height: 660px
+}
+
+/*HEADER BLOM DIKASIH ANIMASI SLIDER*/
+
+.header-title {
     position: absolute;
-    transform: translate(-50%,-50%);
-    top: 20%;
-    left: 50%;
-    overflow: hidden;
+    top: 85px;
 }
 
-#header-slides {
-    animation: ease-in-out 10s infinite;
+.nav-menu {
+    margin: 30px 0 50px;
+}
+
+.nav-button p {
+    color: black;
+    display: block;
+    font-size: 21px;
+    text-align: center;
+    border: 0;
+    border-right: 1px solid black;
+}
+
+.nav-text {
+    padding: 10px;
+}
+
+.nav-button p:hover {
+    background-color: orange;
+    color: white;
+}
+
+.nav-button ul {
     display: flex;
-    width: 100%;
+    justify-content: center;
+    position: relative;
 }
 
-#header-slides img {
+.nav-button ul::after {
+    background: orange;
+    content: '';
+    height: 15px;
     width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -1;
 }
 
-@keyframes header-slides{
-    0%{
-        transform: translateX(0);
-    }
-    25%{
-        transform: translateX(0);
-    }
-    30%{
-        transform: translateX(-100%);
-    }
-    50%{
-        transform: translateX(-100%);
-    }
-    55%{
-        transform: translateX(-200%);
-    }
-    75%{
-        transform: translateX(-200%);
-    }
-    80%{
-        transform: translateX(-300%);
-    }
-    100%{
-        transform: translateX(-300%);
-    }
+.nav-button ul>li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-button li {
+    margin: 0px 50px;
+}
+
+
+#menu1-family {
+    background-image: url(assets/menu1-family/bg-menu1.png);
+    background-size: cover;
+}
+
+.menu1-title {
+    padding: 35px 80px;
 }
