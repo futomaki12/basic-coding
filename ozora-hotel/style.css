@@ -15,9 +15,9 @@ body {
 }
 
 #header-slider {
-    position: relative;
 	overflow: hidden;
-    height: 660px
+    height: 660px;
+    width: 100%;
 }
 
 /*HEADER BLOM DIKASIH ANIMASI SLIDER*/
@@ -36,12 +36,10 @@ body {
     display: block;
     font-size: 21px;
     text-align: center;
-    border: 0;
-    border-right: 1px solid black;
 }
 
 .nav-text {
-    padding: 10px;
+    padding: 5px;
 }
 
 .nav-button p:hover {
@@ -75,6 +73,7 @@ body {
     margin: 0px 50px;
 }
 
+/* -------------- */
 
 #menu1-family {
     background-image: url(assets/menu1-family/bg-menu1.png);
@@ -82,5 +81,6 @@ body {
 }
 
 .menu1-title {
-    padding: 35px 80px;
+    padding: 90px 0px 100px 80px;
 }
+
