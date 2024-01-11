@@ -8,6 +8,7 @@
 
 body {
     background-color: #fff;
+    width: 100%;
 }
 
 .container {
@@ -16,7 +17,37 @@ body {
 
 #header-slider {
 	overflow: hidden;
-    height: 660px;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+@keyframes slider {
+  20% {margin-left: 0px;}
+  30% {margin-left: -1920px;}
+  50% {margin-left: -1920px;}
+  60% {margin-left: -3840px;}
+  70% {margin-left: -3840px;}
+  80% {margin-left: 0px;}
+  90% {margin-left: 0px;}
+}
+
+figure.slider {
+    animation: 30s slider infinite;
+    position: relative;
+    width: 500%;
+    height: 680px;
+}
+
+figure.slider figure {
+    display: inline-block;
+    position: inherit;
+
+    height: auto;
+    width: 20%;
+}
+
+figure.slider img {
+    height: auto;
     width: 100%;
 }
 
@@ -56,7 +87,7 @@ body {
 .nav-button ul::after {
     background: orange;
     content: '';
-    height: 15px;
+    height: 5px;
     width: 100%;
     position: absolute;
     left: 0;
@@ -76,11 +107,14 @@ body {
 /* -------------- */
 
 #menu1-family {
-    background-image: url(assets/menu1-family/bg-menu1.png);
-    background-size: cover;
+    background: url(assets/menu1-family/bg-menu1.png) no-repeat;
+    background-size: 100%;
 }
 
 .menu1-title {
     padding: 90px 0px 100px 80px;
 }
 
+.slider {
+    
+}
