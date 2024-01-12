@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>CSS</title>
+		<title>Test Page</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>	
-		<div class="carousel">	
-			<div class="carousel-wrapper" style="height: 400px;">
-				<span id="target-item-1"></span>
-				<span id="target-item-2"></span>
-				<span id="target-item-3"></span>
-				<span id="target-item-4"></span>
-				<span id="target-item-5"></span>
-				<div class="carousel-item item-1">
+		<div class="CSSgal">
+
+			<!-- Don't wrap targets in parent -->
+			<s id="s1"></s> 
+			<s id="s2"></s>
+			<s id="s3"></s>
+			<s id="s4"></s>
+			<s id="s5"></s>
+		  
+			<div class="slider">
+			  	<div class="menu1-img1">
 					<img src="../ozora-hotel/assets/menu1-family/menu1-img1.png" alt="">
-					<a class="arrow arrow-prev" href="#target-item-5"></a>
-					<a class="arrow arrow-next" href="#target-item-2"></a>
 				</div>
-				<div class="carousel-item item-2">
+			  	<div>
 					<img src="../ozora-hotel/assets/menu1-family/menu1-img2.png" alt="">
-					<a class="arrow arrow-prev" href="#target-item-1"></a>
-					<a class="arrow arrow-next" href="#target-item-3"></a>
 				</div>
-				<div class="carousel-item item-3">
+			  	<div>
 					<img src="../ozora-hotel/assets/menu1-family/menu1-img3.png" alt="">
-					<a class="arrow arrow-prev" href="#target-item-2"></a>
-					<a class="arrow arrow-next" href="#target-item-4"></a>
 				</div>
-				<div class="carousel-item item-4">
+			  	<div>
 					<img src="../ozora-hotel/assets/menu1-family/menu1-img4.png" alt="">
-					<a class="arrow arrow-prev" href="#target-item-3"></a>
-					<a class="arrow arrow-next" href="#target-item-5"></a>
 				</div>
-				<div class="carousel-item item-5">
+				<div>
 					<img src="../ozora-hotel/assets/menu1-family/menu1-img5.png" alt="">
-					<a class="arrow arrow-prev" href="#target-item-4"></a>
-					<a class="arrow arrow-next" href="#target-item-1"></a>
 				</div>
-  			</div>
-		</div>
-		<div class="btn-home">
-			<a href="../index.html">
-				<img src="../btn-home.png" width="80" alt="Home">
-			</a>
-		</div>
+			</div>
+			
+			<div class="prevNext">
+			  <div><a href="#s4"></a><a href="#s2"></a></div>
+			  <div><a href="#s1"></a><a href="#s3"></a></div>
+			  <div><a href="#s2"></a><a href="#s4"></a></div>
+			  <div><a href="#s3"></a><a href="#s1"></a></div>
+			  <div><a href="#s5"></a><a href="#s5"></a></div>
+			</div>
+		  
+			<div class="bullets">
+			  <a href="#s1"></a>
+			  <a href="#s2"></a>
+			  <a href="#s3"></a>
+			  <a href="#s4"></a>
+			  <a href="#s5"></a>
+			</div>
+		  
+		  </div>
 	</body>
 </html>
