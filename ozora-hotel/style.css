@@ -56,6 +56,8 @@ figure.slider img {
 .header-title {
     position: absolute;
     top: 85px;
+    width: 100%;
+    max-width: ;
 }
 
 .nav-menu {
@@ -115,6 +117,132 @@ figure.slider img {
     padding: 90px 0px 100px 80px;
 }
 
-.slider {
-    
+.menu1-content {
+    display: flex;
+}
+
+/*~Menu 1 Gallery~*/
+
+/*
+PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+http://stackoverflow.com/a/34696029/383904
+*/
+
+.menu1-CSSgal {
+	margin: 20px 0px 70px 100px;
+	position: relative;
+	overflow: hidden;
+	height: 255px;
+  	width: 360px;
+    max-width: 100%;
+    box-shadow: 22px 30px 0px 0px rgba(255, 153, 0, 0.65);
+}
+
+/* SLIDER */
+
+.menu1-CSSgal .menu1-slider {
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	transition: 0.8s;
+}
+
+/* SLIDES */
+
+.menu1-CSSgal .menu1-slider > * {
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.menu1-CSSgal .prevNext {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	width: 100%;
+	height: 0;
+}
+
+.menu1-CSSgal .prevNext > div+div {
+	visibility: hidden; /* Hide all but first P/N container */
+}
+
+.menu1-CSSgal .prevNext a {
+	background: #fff;
+	color: black;
+	position: absolute;
+	width:       30px;
+	height:      30px;
+	line-height: 30px;  /*If you want to place numbers */
+	font-size: 35px;
+	text-align: center;
+	opacity: 0.7;
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+	-webkit-transform: translateY(-50%);
+					transform: translateY(-50%);
+	left: 0;
+}
+.menu1-CSSgal .prevNext a:hover {
+	opacity: 1;
+}
+.menu1-CSSgal .prevNext a+a {
+	left: auto;
+	right: 0;
+}
+
+
+/* ALL: */
+.menu1-CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+/* ACTIVE: */
+#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+#s5:target ~ .prevNext >*:nth-child(5) {visibility: visible;}
+/* More slides? Add here more rules */
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .menu1-slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .menu1-slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .menu1-slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .menu1-slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+#s5:target ~ .menu1-slider {transform: translateX(-400%); -webkit-transform: translateX(-400%);}
+/* More slides? Add here more rules */
+
+
+/* YOU'RE THE DESIGNER! 
+   ____________________
+   All above was mainly to get it working :)
+   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+.menu1-caption {
+    margin-top: 50%;
+}
+
+.menu1-caption p {
+	font-size: 11px;
+	padding: 5px 10px;
+	color: #fff;
+	text-align: center;
+    word-spacing: 5px;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.menu1-CSSgal a {
+	border-radius: 50%;
+	margin: 0 3px;
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
+}
+
+/*end of menu 1 gallery*/
+
+.menu1-plan {
+    margin-left: 60px;
 }
