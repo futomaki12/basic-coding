@@ -57,7 +57,6 @@ figure.slider img {
     position: absolute;
     top: 85px;
     width: 100%;
-    max-width: ;
 }
 
 .nav-menu {
@@ -107,17 +106,27 @@ figure.slider img {
 }
 
 /* -------------- */
+.menu-container {
+    width: 100%;
+}
 
 #menu1-family {
     background: url(assets/menu1-family/bg-menu1.png) no-repeat;
-    background-size: 100%;
+    background-size: cover;
+}
+
+.menuWrapper {
+    width: 990px;
+    max-width: 100%;
+    margin: 0px auto 100px;
 }
 
 .menu1-title {
-    padding: 90px 0px 100px 80px;
+    padding: 90px 0px 50px 0px;
+    margin: 0 auto;
 }
 
-.menu1-content {
+.menuContent {
     display: flex;
 }
 
@@ -129,7 +138,7 @@ http://stackoverflow.com/a/34696029/383904
 */
 
 .menu1-CSSgal {
-	margin: 20px 0px 70px 100px;
+    margin-left: 30px;
 	position: relative;
 	overflow: hidden;
 	height: 255px;
@@ -244,5 +253,24 @@ http://stackoverflow.com/a/34696029/383904
 /*end of menu 1 gallery*/
 
 .menu1-plan {
-    margin-left: 60px;
+    margin-left: 100px;
+}
+
+.menu1-plan ul>li {
+    list-style: url(assets/listStyle-momiji.png);
+    margin-bottom: 10px;
+}
+
+.menu1-plan h2 {
+    color: rgb(153, 102, 51);
+    font-size: 16px;
+    border-bottom: solid rgb(255, 204, 102) 5px;
+}
+
+span#menu1-plan1 {
+    color: rgb(244, 170, 136);
+}
+
+span#menu1-plan2 {
+    color: rgb(182, 169, 43);
 }
