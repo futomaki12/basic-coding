@@ -118,12 +118,15 @@ figure.slider img {
 .menuWrapper {
     width: 990px;
     max-width: 100%;
-    margin: 0px auto 100px;
+    margin: 100px auto;
 }
 
 .menu1-title {
     padding: 90px 0px 50px 0px;
-    margin: 0 auto;
+}
+
+.menu1-title img {
+    width: 700px;
 }
 
 .menuContent {
@@ -263,7 +266,7 @@ http://stackoverflow.com/a/34696029/383904
 
 .menu1-plan h2 {
     color: rgb(153, 102, 51);
-    font-size: 16px;
+    font-size: 20px;
     border-bottom: solid rgb(255, 204, 102) 5px;
 }
 
@@ -274,3 +277,6 @@ span#menu1-plan1 {
 span#menu1-plan2 {
     color: rgb(182, 169, 43);
 }
+
+/* Menu 2 */
+
