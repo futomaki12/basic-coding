@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box
+}
+
+/* --------------- */
+
+.topSlider-pc {
+    position: relative;
+}
+
+.topSlider-pc img {
+    
+}
+
+/* RESERVED FOR AUTOMATIC SLIDER TOP */
+
+.title {
+    position: absolute;
+    top: 85px;
+    width: 100%;
+}
