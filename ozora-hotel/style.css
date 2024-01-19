@@ -11,10 +11,6 @@ body {
     width: 100%;
 }
 
-.container {
-    width: 100%;
-}
-
 #header-slider {
 	overflow: hidden;
     overflow-x: hidden;
@@ -25,8 +21,8 @@ body {
   20% {margin-left: 0px;}
   30% {margin-left: -1920px;}
   50% {margin-left: -1920px;}
-  60% {margin-left: -3840px;}
-  70% {margin-left: -3840px;}
+  60% {margin-left: -3810px;}
+  70% {margin-left: -3810px;}
   80% {margin-left: 0px;}
   90% {margin-left: 0px;}
 }
@@ -117,8 +113,8 @@ figure.slider img {
 }
 
 .menuWrapper {
-    width: 990px;
-    max-width: 100%;
+    max-width: 990px;
+    width: 100%;
     margin: auto;
     padding: 75px 0px 250px;
 }
@@ -290,11 +286,11 @@ http://stackoverflow.com/a/34696029/383904
     border-bottom: solid rgb(255, 204, 102) 5px;
 }
 
-span#menu1-plan1 {
+span#menu1__plan1 {
     color: rgb(244, 170, 136);
 }
 
-span#menu1-plan2 {
+span#menu1__plan2 {
     color: rgb(226, 214, 109);
 }
 
@@ -306,10 +302,25 @@ span#menu1-plan2 {
     background-size: cover;
 }
 
+.menu2-title {
+    display: block;
+    text-align: center;
+}
+
+.menu2-title img {
+    margin: 50px 0 20px;
+}
+
+.menu2-titleLine {
+    background-color: white;
+    height: 10px;
+    width: 100%;
+}
+
 .menu2-collage {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
+    grid-template-rows: repeat(4, 6vw);
     grid-gap: 15px;
 }
 
@@ -320,10 +331,15 @@ span#menu1-plan2 {
 }
 
 .collage__item--1 {
+    object-position: left 3;
     grid-column-start: 6;
     grid-column-end: 9;
     grid-row-start: 1;
-    grid-row-end: 6;
+    grid-row-end: 5;
+}
+
+.collage__item--1 img {
+    object-position: 73%;
 }
 
 .collage__item--2 {
@@ -344,6 +360,63 @@ span#menu1-plan2 {
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 3;
-    grid-row-end: 6;
+    grid-row-end: 5;
 }
 
+.collage__item--4 img {
+    object-position: top;
+}
+
+/*COLLAGE NYA NANTI DIPAKEIN HOVER BUAT GEDEIN GAMBAR (maybe?)*/
+
+.menu2-plan-desc {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0 50px;
+}
+
+.menu2-plan ul {
+    margin-right: 20px;
+}
+
+.menu2-plan ul>li {
+    list-style: url(assets/listStyle-momiji.png);
+    margin-bottom: 10px;
+}
+
+.menu2-plan h2 {
+    color: rgb(153, 102, 51);
+    font-size: 25px;
+    border-bottom: solid olive 5px;
+}
+
+.menu2-desc {
+    background: rgb(253, 227, 139);
+    border: solid olive 5px;
+    text-align: center;
+}
+
+.menu2-desc p {
+    font-size: 16px;
+    padding: 20px;
+}
+
+#menu2__plan {
+    color: rgb(153, 102, 51);
+}
+
+/* Menu 3 */
+
+#menu3-camp {
+    background: url(assets/menu3-camp/menu3-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.menu3-title img {
+    width: 100%;
+    position: relative;
+}
+
+.menu3-title p {
+    position: absolute;
+}
