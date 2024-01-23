@@ -116,7 +116,7 @@ figure.slider img {
     max-width: 990px;
     width: 100%;
     margin: auto;
-    padding: 75px 0px 250px;
+    padding: 75px 0px 30px;
 }
 
 .menu1-title {
@@ -145,7 +145,7 @@ figure.slider img {
     color: white;
 }
 
-.menuContent {
+.menu1-menuContent {
     display: flex;
 }
 
@@ -168,6 +168,10 @@ http://stackoverflow.com/a/34696029/383904
 
 /* SLIDER */
 
+s {
+    display: none;
+}
+
 .menu1-CSSgal .menu1-slider {
 	height: 100%;
 	white-space: nowrap;
@@ -187,7 +191,7 @@ http://stackoverflow.com/a/34696029/383904
 
 /* PREV/NEXT, CONTAINERS & ANCHORS */
 
-.menu1-CSSgal .prevNext {
+.menu1-CSSgal .menu1-prevNext {
 	position: absolute;
 	z-index: 1;
 	top: 50%;
@@ -195,11 +199,11 @@ http://stackoverflow.com/a/34696029/383904
 	height: 0;
 }
 
-.menu1-CSSgal .prevNext > div+div {
+.menu1-CSSgal .menu1-prevNext > div+div {
 	visibility: hidden; /* Hide all but first P/N container */
 }
 
-.menu1-CSSgal .prevNext a {
+.menu1-CSSgal .menu1-prevNext a {
 	background: #fff;
 	color: black;
 	position: absolute;
@@ -215,10 +219,10 @@ http://stackoverflow.com/a/34696029/383904
 					transform: translateY(-50%);
 	left: 0;
 }
-.menu1-CSSgal .prevNext a:hover {
+.menu1-CSSgal .menu1-prevNext a:hover {
 	opacity: 1;
 }
-.menu1-CSSgal .prevNext a+a {
+.menu1-CSSgal .menu1-prevNext a+a {
 	left: auto;
 	right: 0;
 }
@@ -227,20 +231,20 @@ http://stackoverflow.com/a/34696029/383904
 /* ALL: */
 .menu1-CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
 /* ACTIVE: */
-#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
-#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
-#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
-#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
-#s5:target ~ .prevNext >*:nth-child(5) {visibility: visible;}
+#menu1-s1:target ~ .menu1-prevNext >*:nth-child(1) {visibility: visible;}
+#menu1-s2:target ~ .menu1-prevNext >*:nth-child(2) {visibility: visible;}
+#menu1-s3:target ~ .menu1-prevNext >*:nth-child(3) {visibility: visible;}
+#menu1-s4:target ~ .menu1-prevNext >*:nth-child(4) {visibility: visible;}
+#menu1-s5:target ~ .menu1-prevNext >*:nth-child(5) {visibility: visible;}
 /* More slides? Add here more rules */
 
 /* SLIDER ANIMATION POSITIONS */
 
-#s1:target ~ .menu1-slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
-#s2:target ~ .menu1-slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
-#s3:target ~ .menu1-slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
-#s4:target ~ .menu1-slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
-#s5:target ~ .menu1-slider {transform: translateX(-400%); -webkit-transform: translateX(-400%);}
+#menu1-s1:target ~ .menu1-slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#menu1-s2:target ~ .menu1-slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#menu1-s3:target ~ .menu1-slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#menu1-s4:target ~ .menu1-slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+#menu1-s5:target ~ .menu1-slider {transform: translateX(-400%); -webkit-transform: translateX(-400%);}
 /* More slides? Add here more rules */
 
 
@@ -413,16 +417,13 @@ span#menu1__plan2 {
 }
 
 .menu3-title {
+    padding-top: 30px;
     position: relative;
 }
 
-.menu3-title::after {
-    background: orange;
-    content: '';
-    height: 20px;
+.menu3-title img {
     width: 100%;
-    position: absolute;
-    left: 0;
-    top: 5;
-    z-index: -1;
 }
+
+/*Menu 3 Slider*/
+
