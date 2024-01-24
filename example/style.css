@@ -125,7 +125,9 @@ http://stackoverflow.com/a/34696029/383904
 #menu3-s4:target ~ .menu3-prevNext >*:nth-child(4) {visibility: visible;}
 #menu3-s5:target ~ .menu3-prevNext >*:nth-child(5) {visibility: visible;}
 /* More slides? Add here more rules */
-
+opacity: 1;
+	transform: scale(1);
+	transition: opacity 1s ease-in-out;
 /* SLIDER ANIMATION POSITIONS */
 
 #menu3-s1:target ~ .menu3-slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}

@@ -19,10 +19,10 @@ body {
 
 @keyframes slider {
   20% {margin-left: 0px;}
-  30% {margin-left: -1920px;}
-  50% {margin-left: -1920px;}
-  60% {margin-left: -3810px;}
-  70% {margin-left: -3810px;}
+  30% {margin-left: -100%;}
+  50% {margin-left: -100%;}
+  60% {margin-left: -200%;}
+  70% {margin-left: -200%;}
   80% {margin-left: 0px;}
   90% {margin-left: 0px;}
 }
@@ -304,6 +304,7 @@ span#menu1__plan2 {
 #menu2-baby {
     background: url(assets/menu2-baby/bg-menu2.png) no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .menu2-title {
@@ -409,6 +410,27 @@ span#menu1__plan2 {
     color: rgb(153, 102, 51);
 }
 
+.menu2-decor {
+    padding-top: 100px;
+    pointer-events: none;
+}
+
+.menu2-decor img {
+    width: 100%;
+}
+
+#menu2-decor1 {
+    position: absolute;
+    width: 15rem;
+    bottom: 0px;
+    left: 67%;
+}
+
+#menu2-grass {
+    bottom: 0px;
+    position: absolute;
+}
+
 /* Menu 3 */
 
 #menu3-camp {
@@ -426,4 +448,35 @@ span#menu1__plan2 {
 }
 
 /*Menu 3 Slider*/
+
+#menu4-buffet {
+    background: url(/ozora-hotel/assets/menu4-buffet/menu4-bg.png) no-repeat;
+    background-size: cover;
+}
+
+.menu4-title {
+    padding: 90px 0px 50px 0px;
+}
+
+.menu4-title2 {
+    position: relative;
+    z-index: 2;
+}
+
+.menu4-title2::before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    bottom: 0px;
+    left: -220px;
+    right: -20px;
+    background: rgb(204, 204, 102);
+    z-index: -1;
+}
+
+.menu4-title h2 {
+    text-align: right;
+    font-size: 35px;
+    color: rgb(144, 86, 33);
+}
 
