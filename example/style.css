@@ -7,18 +7,19 @@ PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
 http://stackoverflow.com/a/34696029/383904
 */
 
-.menu3-CSSgal {
+.menu4-CSSgal {
+	border-radius: 50px;
 	margin-left: 30px;
 	position: relative;
 	overflow: hidden;
-	height: 392px;
-  	width: 800px;
+	height: 400px;
+  	width: 400px;
     max-width: 100%;
 }
 
 /* SLIDER */
 
-.menu3-CSSgal .menu3-slider {
+.menu4-CSSgal .menu4-slider {
 	height: 100%;
 	white-space: nowrap;
 	font-size: 0;
@@ -27,7 +28,7 @@ http://stackoverflow.com/a/34696029/383904
 
 /* SLIDES */
 
-.menu3-CSSgal .menu3-slider > * {
+.menu4-CSSgal .menu4-slider > * {
 	font-size: 1rem;
 	display: inline-block;
 	white-space: normal;
@@ -40,7 +41,7 @@ http://stackoverflow.com/a/34696029/383904
 
 /* PREV/NEXT, CONTAINERS & ANCHORS */
 
-.menu3-CSSgal .menu3-prevNext {
+.menu4-CSSgal .menu4-prevNext {
 	position: absolute;
 	z-index: 1;
 	top: 50%;
@@ -48,11 +49,11 @@ http://stackoverflow.com/a/34696029/383904
 	height: 0;
 }
 
-.menu3-CSSgal .menu3-prevNext > div+div {
+.menu4-CSSgal .menu4-prevNext > div+div {
 	visibility: hidden; /* Hide all but first P/N container */
 }
 
-.menu3-CSSgal .menu3-prevNext a {
+.menu4-CSSgal .menu4-prevNext a {
 	background: #fff;
 	color: black;
 	position: absolute;
@@ -68,17 +69,17 @@ http://stackoverflow.com/a/34696029/383904
 					transform: translateY(-50%);
 	left: 0;
 }
-.menu3-CSSgal .menu3-prevNext a:hover {
+.menu4-CSSgal .menu4-prevNext a:hover {
 	opacity: 1;
 }
-.menu3-CSSgal .menu3-prevNext a+a {
+.menu4-CSSgal .menu4-prevNext a+a {
 	left: auto;
 	right: 0;
 }
 
 /* NAVIGATION */
 
-.menu3-CSSgal .menu3-bullets {
+.menu4-CSSgal .menu4-bullets {
 	position: absolute;
 	z-index: 2;
 	bottom: 0;
@@ -86,7 +87,7 @@ http://stackoverflow.com/a/34696029/383904
 	width: 100%;
 	text-align: center;
 }
-.menu3-CSSgal .menu3-bullets > a {
+.menu4-CSSgal .menu4-bullets > a {
 	display: inline-block;
 	width:       30px;
 	height:      30px;
@@ -97,44 +98,42 @@ http://stackoverflow.com/a/34696029/383904
 	-webkit-transition: 0.3s;
 					transition: 0.3s;
 }
-.menu3-CSSgal .menu3-bullets > a+a {
+.menu4-CSSgal .menu4-bullets > a+a {
 	background: rgba(255, 255, 255, 0.5); /* Dim all but first */
 }
-.menu3-CSSgal .menu3-bullets > a:hover {
+.menu4-CSSgal .menu4-bullets > a:hover {
 	background: rgba(255, 255, 255, 0.7) !important;
 }
 
 /* NAVIGATION BUTTONS */
 /* ALL: */
-.menu3-CSSgal >s:target ~ .menu3-bullets >* {      background: rgba(255, 255, 255, 0.5);}
+.menu4-CSSgal >s:target ~ .menu4-bullets >* {      background: rgba(255, 255, 255, 0.5);}
 /* ACTIVE */
-#menu3-s1:target ~ .menu3-bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
-#menu3-s2:target ~ .menu3-bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
-#menu3-s3:target ~ .menu3-bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
-#menu3-s4:target ~ .menu3-bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
-#menu3-s5:target ~ .menu3-bullets >*:nth-child(5) {background: rgba(255, 255, 255,   1);}
+#menu4-s1:target ~ .menu4-bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+#menu4-s2:target ~ .menu4-bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+#menu4-s3:target ~ .menu4-bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+#menu4-s4:target ~ .menu4-bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+#menu4-s5:target ~ .menu4-bullets >*:nth-child(5) {background: rgba(255, 255, 255,   1);}
 /* More slides? Add here more rules */
 
 /* PREV/NEXT CONTAINERS VISIBILITY */
 /* ALL: */
-.menu3-CSSgal >s:target ~ .menu3-prevNext >* {visibility: hidden;}
+.menu4-CSSgal >s:target ~ .menu4-prevNext >* {visibility: hidden;}
 /* ACTIVE: */
-#menu3-s1:target ~ .menu3-prevNext >*:nth-child(1) {visibility: visible;}
-#menu3-s2:target ~ .menu3-prevNext >*:nth-child(2) {visibility: visible;}
-#menu3-s3:target ~ .menu3-prevNext >*:nth-child(3) {visibility: visible;}
-#menu3-s4:target ~ .menu3-prevNext >*:nth-child(4) {visibility: visible;}
-#menu3-s5:target ~ .menu3-prevNext >*:nth-child(5) {visibility: visible;}
+#menu4-s1:target ~ .menu4-prevNext >*:nth-child(1) {visibility: visible;}
+#menu4-s2:target ~ .menu4-prevNext >*:nth-child(2) {visibility: visible;}
+#menu4-s3:target ~ .menu4-prevNext >*:nth-child(3) {visibility: visible;}
+#menu4-s4:target ~ .menu4-prevNext >*:nth-child(4) {visibility: visible;}
+#menu4-s5:target ~ .menu4-prevNext >*:nth-child(5) {visibility: visible;}
 /* More slides? Add here more rules */
-opacity: 1;
-	transform: scale(1);
-	transition: opacity 1s ease-in-out;
+
 /* SLIDER ANIMATION POSITIONS */
 
-#menu3-s1:target ~ .menu3-slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
-#menu3-s2:target ~ .menu3-slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
-#menu3-s3:target ~ .menu3-slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
-#menu3-s4:target ~ .menu3-slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
-#menu3-s5:target ~ .menu3-slider {transform: translateX(-400%); -webkit-transform: translateX(-400%);}
+#menu4-s1:target ~ .menu4-slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#menu4-s2:target ~ .menu4-slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#menu4-s3:target ~ .menu4-slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#menu4-s4:target ~ .menu4-slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+#menu4-s5:target ~ .menu4-slider {transform: translateX(-400%); -webkit-transform: translateX(-400%);}
 /* More slides? Add here more rules */
 
 
@@ -143,18 +142,18 @@ opacity: 1;
    All above was mainly to get it working :)
    CSSgal CUSTOM STYLES / OVERRIDES HERE: */
 
-.menu3-CSSgal{
+.menu4-CSSgal{
 	color: #fff;	
 	text-align: center;
 }
-.menu3-CSSgal .menu3-slider h2 {
+.menu4-CSSgal .menu4-slider h2 {
 	margin-top: 40vh;
 	font-weight: 200;
 	letter-spacing: -0.06em;
 	word-spacing: 0.2em;
 	font-size: 3em;
 }
-.menu3-CSSgal a {
+.menu4-CSSgal a {
 	border-radius: 50%;
 	margin: 0 3px;
 	color: rgba(0,0,0,0.8);
