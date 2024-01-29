@@ -53,6 +53,9 @@ figure.slider img {
 .header-title {
     position: absolute;
     top: 85px;
+}
+
+.header-title img {
     width: 100%;
 }
 
@@ -124,11 +127,7 @@ figure.slider img {
 }
 
 .menu1-title {
-<<<<<<< HEAD
     padding: 35px 0px 50px 0px;
-=======
-    padding: 90px 0px 50px 0px;
->>>>>>> 7dfde0c8baa908d16d4c7e252096e7148161aacb
 }
 
 .menu1-title2 {
@@ -219,11 +218,7 @@ s {
 	width:       30px;
 	height:      30px;
 	line-height: 30px;  /*If you want to place numbers */
-<<<<<<< HEAD
 	font-size: 20px;
-=======
-	font-size: 35px;
->>>>>>> 7dfde0c8baa908d16d4c7e252096e7148161aacb
 	text-align: center;
 	opacity: 0.7;
 	-webkit-transition: 0.3s;
@@ -307,7 +302,6 @@ span#menu1__plan1 {
     color: rgb(244, 170, 136);
 }
 
-<<<<<<< HEAD
 .menu1__plan1-btn {
     background-color: orangered;
     width: 200px;
@@ -328,10 +322,6 @@ span#menu1__plan2 {
     width: 200px;
     height: 50px;
     
-=======
-span#menu1__plan2 {
-    color: rgb(226, 214, 109);
->>>>>>> 7dfde0c8baa908d16d4c7e252096e7148161aacb
 }
 
 
@@ -488,11 +478,8 @@ span#menu1__plan2 {
 /* Menu 3 Slider */
 
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 7dfde0c8baa908d16d4c7e252096e7148161aacb
 /* MENU 4 BUFFET */
 
 #menu4-buffet {
@@ -501,11 +488,7 @@ span#menu1__plan2 {
 }
 
 .menu4-title {
-<<<<<<< HEAD
     padding: 60px 0px 50px 0px;
-=======
-    padding: 90px 0px 50px 0px;
->>>>>>> 7dfde0c8baa908d16d4c7e252096e7148161aacb
 }
 
 .menu4-title2 {
