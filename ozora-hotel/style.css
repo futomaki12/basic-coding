@@ -483,7 +483,7 @@ span#menu1__plan2 {
 /* MENU 4 BUFFET */
 
 #menu4-buffet {
-    background: url(/ozora-hotel/assets/menu4-buffet/menu4-bg.png) no-repeat;
+    background: url(assets/menu4-buffet/menu4-bg.png) no-repeat;
     background-size: cover;
 }
 
@@ -681,7 +681,7 @@ span#menu1__plan2 {
 .menu4-carousel::after {
     position: absolute;
     content: "";
-    background: url("/ozora-hotel/assets/menu4-buffet/menu4-utensils__Decor.png") no-repeat center;
+    background: url("assets/menu4-buffet/menu4-utensils__Decor.png") no-repeat center;
     background-size: cover;
     width:  80px;
     height: 26%;
