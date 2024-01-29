@@ -669,7 +669,7 @@ span#menu1__plan2 {
 .menu4-carousel::before {
     position: absolute;
     content: "";
-    background: url("/ozora-hotel/assets/menu4-buffet/menu4-tea__Decor.png") no-repeat center;
+    background: url("assets/menu4-buffet/menu4-tea__Decor.png") no-repeat center;
     background-size: cover;
     width:  150px;
     height: 26%;
