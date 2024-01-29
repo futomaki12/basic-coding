@@ -287,6 +287,11 @@ s {
     margin-left: 100px;
 }
 
+.menu1-plan a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .menu1-plan ul>li {
     list-style: url(assets/listStyle-momiji.png);
     margin-bottom: 10px;
@@ -303,8 +308,8 @@ span#menu1__plan1 {
 }
 
 .menu1__plan1-btn {
-    background-color: orangered;
-    width: 200px;
+    background-color: rgb(240, 132, 74);
+    width: 300px;
     height: 50px;
 
 }
@@ -313,15 +318,15 @@ span#menu1__plan2 {
     color: rgb(198, 255, 141);
 }
 
-.menu1__btn {
+.menu__btn {
     text-align: center;
+    padding: 11px;
 }
 
 .menu1__plan2-btn {
-    background-color: olive;
-    width: 200px;
+    background-color: rgb(182, 169, 63);
+    width: 300px;
     height: 50px;
-    
 }
 
 
@@ -410,6 +415,11 @@ span#menu1__plan2 {
     margin-right: 20px;
 }
 
+.menu2-plan a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .menu2-plan ul>li {
     list-style: url(assets/listStyle-momiji.png);
     margin-bottom: 15px;
@@ -434,6 +444,12 @@ span#menu1__plan2 {
 
 #menu2-planSpan {
     color: rgb(153, 102, 51);
+}
+
+.menu2__plan-btn {
+    background-color: rgb(219, 140, 44);
+    width: 300px;
+    height: 50px;
 }
 
 .menu2-decor {
@@ -698,3 +714,20 @@ span#menu1__plan2 {
     text-align: center;
 }
 
+.menu4-review {
+    position: relative;
+    align-items: center;
+}
+
+.reviewContainer {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    font-size: 20px;
+}
+
+.reviewText {
+    margin: 20px 0px;
+    padding: 15px;
+    background-color: #fff;
+}
