@@ -716,13 +716,41 @@ span#menu1__plan2 {
 
 .menu4-review {
     position: relative;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
+}
+
+.menu4-review::before {
+    position: absolute;
+    content: "";
+    background: url("assets/menu4-buffet/menu4-mushroom2__Decor.png") no-repeat center;
+    background-size: cover;
+    width:  150px;
+    height: 250px;
+    bottom: -12%;
+    left: 20px;
+    z-index: 99;
+}
+
+.menu4-review::after {
+    position: absolute;
+    content: "";
+    background: url("assets/menu4-buffet/menu4-mushroom1__Decor.png") no-repeat center;
+    background-size: cover;
+    width:  200px;
+    height: 200px;
+    top: -25%;
+    right: 25px;
+    z-index: 99;
 }
 
 .reviewContainer {
     position: absolute;
-    top: 50px;
-    left: 80px;
+    top: 15%;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
 }
 
@@ -730,4 +758,61 @@ span#menu1__plan2 {
     margin: 20px 0px;
     padding: 15px;
     background-color: #fff;
+}
+
+.footer {
+    background: url(assets/footer/footer-bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 30px 0 0 0;
+    display: block;
+    text-align: center;
+    font-size: 26px;
+}
+
+.footer button {
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Zen Old Mincho';
+    border: none !important;
+    padding: 20px 80px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.footer button:active {
+    box-shadow: none;
+    transform: translate(0, 4px);
+}
+
+.couponTop-btn {
+    background-color: rgb(255, 255, 204);
+    box-shadow: 0 8px 0 rgb(61, 110, 61);
+    margin-bottom: 30px;
+}
+
+.airplaneCoupon {
+    display: flex;
+    margin: 30px 0px;
+    justify-content: space-evenly;
+}
+
+.airplaneCoupon button {
+    color: #fff;
+    padding: 20px;
+}
+
+.JAL__Coupon {
+    background-color: rgb(204, 0, 0);
+    box-shadow: 0 8px 0 rgb(158, 13, 13);
+}
+
+.ANA__Coupon {
+    background-color: rgb(51, 102, 153);
+    box-shadow: 0 8px 0 rgb(13, 61, 110);
+}
+
+.couponBottom-btn {
+    background-color: gold;
+    box-shadow: 0 8px 0 rgb(61, 110, 61);
 }
