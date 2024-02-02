@@ -15,7 +15,6 @@ body {
 #header-slider {
 	overflow: hidden;
     overflow-x: hidden;
-    position: relative;
 }
 
 @keyframes slider {
@@ -33,6 +32,7 @@ figure.slider {
     position: relative;
     width: 500%;
     height: 680px;
+    position: relative;
 }
 
 figure.slider figure {
@@ -53,7 +53,25 @@ figure.slider img {
 .title {
     position: absolute;
     top: 25%;
-    left: 0;
+    margin-left: 30px;
+}
+
+.lead1, .lead2 {
+    font-size: 30px;
+    color: yellow;
+    position: relative;
+    z-index: 2;
+}
+
+.lead1::before, .lead2::before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    bottom: -5px;
+    left: -30px;
+    right: 20px;
+    background: rgb(102, 102, 0);
+    z-index: -1;
 }
 
 /*HEADER BLOM DIKASIH ANIMASI SLIDER*/
@@ -128,7 +146,7 @@ figure.slider img {
 /* MENU 1 FAMILY */
 
 #menu1-family {
-    background: url(assets/menu1-family/bg-menu1.jpg) no-repeat;
+    background: url(assets/menu1-family/bg-menu1.png) no-repeat;
     background-position: right 35% bottom 55%;
     background-size: cover;
 }
@@ -164,7 +182,7 @@ figure.slider img {
 .menu1-title h2 {
     text-align: right;
     font-size: 35px;
-    color: white;
+    color: rgb(153, 102, 51);
     width: 100%;
 }
 
@@ -313,7 +331,7 @@ s {
 }
 
 .menu1-plan h2 {
-    color: rgb(255, 255, 255);
+    color: rgb(153, 102, 51);
     font-size: 20px;
     border-bottom: solid rgb(255, 204, 102) 5px;
 }
@@ -323,7 +341,7 @@ span#menu1__plan1 {
 }
 
 span#menu1__plan2 {
-    color: rgb(198, 255, 141);
+    color: rgb(124, 158, 90);
 }
 
 
@@ -434,6 +452,10 @@ span#menu1__plan2 {
     margin: 20px 0 50px;
 }
 
+.menu2-planMobile {
+    display: none;
+}
+
 .menu2-plan ul {
     margin-right: 20px;
 }
@@ -493,13 +515,17 @@ span#menu1__plan2 {
     width: 300px;
     max-width: 100%;
     bottom: 0px;
-    right: 60px;
+    right: 50%;
 }
 
 #menu2-grass {
     bottom: 0px;
     position: absolute;
     width: 100%;
+}
+
+#menu2-grassMobile {
+    display: none;
 }
 
 /* MENU 3 CAMP */
@@ -1072,9 +1098,33 @@ span#menu1__plan2 {
 }
 
 @media only screen and (max-width: 480px) {
+
+    .header {
+        top: 0;
+    }
+    
+    .title {
+        top: 20px;
+    }
+    .title p {
+        font-size: 10px;
+    }
     
     .title img {
-        width: 50%;
+        width: 20%;
+    }
+
+    .lead2 {
+        margin-top: -15px;
+    }
+
+    .lead1::before, .lead2::before {
+        position: absolute;
+        content: "";
+        height: 10px;
+        bottom: -2px;
+        left: -30px;
+        right: 150px;
     }
 
     /*NAVIGATION*/
@@ -1082,21 +1132,74 @@ span#menu1__plan2 {
         display: none;
     }
 
+    .nav-mobile {
+        display: block;
+        margin-top: -467px;
+        border-top: solid 2px brown;
+        border-bottom: solid 2px brown;
+    }
+
+    .nav-mobile ul {
+        display: flex;
+        list-style: none;
+        text-align: center;
+        justify-content: space-evenly;
+        text-align: center;
+        position: relative;
+        font-size: 16px;
+    }
+
+    .nav-mobile li {
+        padding-right: 2px;
+    }
+
+    .nav-mobile a {
+        text-decoration: none;
+        color: black;
+    }
+
     /* MENU 1 FAMILY */
 
     .menu1-title h2 {
+        color: white;
         font-size: 25px;
         text-align: center;
     }
 
     .menu1-title2::before {
         bottom: -2px;
-        left: -100px;
-        right: -100px;
+        left: -50px;
+        right: -50px;
     }
 
     .menu1-menuContent {
         display: block;
+    }
+
+    .menu1-caption {
+        margin-top: 60%;
+    }
+
+    .menu1-caption p {
+        font-size: 10px;
+    }
+
+    .menu1-CSSgal {
+        margin: auto;
+        width: 350px;
+    }
+
+    .menu1-plan {
+        margin: 50px 30px;
+        text-align: center;
+    }
+
+    .menu1__plan1-btn, .menu1__plan2-btn {
+        margin: auto;
+    }
+
+    .menu1-plan h2 {
+        font-size: 17px;
     }
 
 
@@ -1106,8 +1209,28 @@ span#menu1__plan2 {
         width: 90%;
     }
 
+    /*COLLAGE*/
+
+    .menu2-collage {
+        grid-gap: 5px;
+        margin: 0px 30px;
+    }
+
     .menu2-decor img {
         width: 100%;
+    }
+
+    #menu2-decor1 {
+        width: 40%;
+    }
+
+    #menu2-grass {
+        display: none;
+    }
+
+    #menu2-grassMobile {
+        display: block;
+        position: relative;
     }
 
     .menu2-plan-desc {
@@ -1115,8 +1238,36 @@ span#menu1__plan2 {
         text-align: center;
     }
 
-    .menu2-plan h2 {
-        border;
+    .menu2-desc {
+        margin: 30px 50px;
+    }
+
+    .menu2-plan {
+        display: none;
+    }
+
+    .menu2-planMobile {
+        display: block;
+    }
+
+    .menu2-planMobile ul {
+        margin-right: 20px;
+    }
+    
+    .menu2-planMobile a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .menu2-planMobile ul>li {
+        list-style: url(assets/listStyle-momiji.png);
+        margin-bottom: 15px;
+    }
+    
+    .menu2-planMobile h2 {
+        color: rgb(153, 102, 51);
+        font-size: 25px;
+        border-bottom: solid olive 5px;
     }
 
     .menu2__plan-btn {
@@ -1124,6 +1275,28 @@ span#menu1__plan2 {
     }
     
     /*MENU 3 CAMP*/
+
+    .menu3-CSSgal {
+        height: 300px;
+        width: 80%;
+    }
+
+    .menu3-desc p {
+        font-size: 16px;
+    }
+
+    .menu3-plan {
+        display: block;
+        margin: 0px 15px ;
+    }
+
+    .menu3-plan1 {
+        margin-bottom: 30px;
+    }
+
+    .menu3-planPrice {
+        font-size: 20px;
+    }
 
     .menu3-carousel::before {
         display: none;
@@ -1142,8 +1315,43 @@ span#menu1__plan2 {
     
     .menu4-title2::before {
         bottom: -2px;
-        left: -100px;
-        right: -100px;
+        left: -50px;
+        right: -50px;
     }
-    
+
+    .menu4-CSSgal {
+        height: 300px;
+        width: 80%;
+    }
+
+    .menu4-carousel::before, .menu4-carousel::after, .menu4-review::before, .menu4-review::after {
+        display: none;
+    }
+
+    .reviewBG {
+        width: 100%;
+    }
+
+    .reviewHeader h3 {
+        font-size: 15px;
+    }
+
+    .reviewText {
+        font-size: 14px;
+        margin-top: 5px;
+        padding: 5px;
+    }
+
+    /* FOOTER */
+    .couponTop p {
+        font-size: 14px;
+    }
+
+    .airplaneCoupon {
+        display: block;
+    }
+
+    .JAL__Coupon {
+        margin-bottom: 20px;
+    }
 }
