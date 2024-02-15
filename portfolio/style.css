@@ -12,7 +12,24 @@ body {
     font-family: "Poppins";
 }
 
+input {
+    visibility: hidden;
+}
 
+h1 {
+    color: white;
+    font-size: 60px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+
+.contentWrapper {
+    padding: 50px 100px;
+    width: 1440px;
+}
+
+/*  HEADER  */
 
 #menu__toggle {
     opacity: 0;
@@ -43,7 +60,7 @@ body {
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 11;
 }
 
 .hamburger__btn > span,
@@ -53,7 +70,7 @@ body {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     transition-duration: .25s;
 }
 
@@ -80,6 +97,7 @@ body {
     background-color: saddlebrown;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
+    z-index: 10;
 }
 
 .menu__item {
@@ -96,6 +114,151 @@ body {
 
 .header {
     background: url(assets/header/header-bg.png) no-repeat;
-    background-size: contain;
+    background-size: contain 50%;
     background-position: right;
 }
+
+/*  ABOUT ME */
+#aboutMe {
+    background: rgb(255, 255, 255);
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+
+#aboutMe h1 {
+    color: rgb(0, 0, 0);
+}
+
+.aboutMe-wrap {
+    display: flex;
+}
+
+.aboutMe-title {
+    font-size: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.aboutMe-title::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 5px;
+    bottom: 0px;
+    left: 0;
+    right: 40%;
+
+    z-index: -2;
+}
+
+.aboutMe__desc {
+    width: 60%;
+}
+
+#aboutMe p {
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.transparentTitle img {
+    width: 400px;
+    margin-top: 60px;
+}
+
+/*  DESIGN  */
+#design {
+    background: rgb(199, 178, 153);
+}
+
+/*  ARTWORK   */
+#artwork {
+    background: rgb(183, 183, 183);
+}
+
+#artwork h1::before {
+    content: "";
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    height: 5px;
+    bottom: 0px;
+    left: 0;
+    right: 40%;
+
+    z-index: -2;
+}
+
+.artworkShowcase {
+    user-select: none;
+}
+
+[type=radio] {
+    display: none;
+}
+  
+#artworkSlider {
+    height: 35vw;
+    position: relative;
+    perspective: 5000px;
+    transform-style: preserve-3d;
+}
+  
+#artworkSlider label {
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0; right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+  
+#artwork-s1:checked ~ #artwork4, #artwork-s2:checked ~ #artwork5,
+#artwork-s3:checked ~ #artwork1, #artwork-s4:checked ~ #artwork2,
+#artwork-s5:checked ~ #artwork3 {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(-30%,0,-300px);
+}
+  
+#artwork-s1:checked ~ #artwork5, #artwork-s2:checked ~ #artwork1,
+#artwork-s3:checked ~ #artwork2, #artwork-s4:checked ~ #artwork3,
+#artwork-s5:checked ~ #artwork4 {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(-15%,0,-100px);
+}
+  
+#artwork-s1:checked ~ #artwork1, #artwork-s2:checked ~ #artwork2,
+#artwork-s3:checked ~ #artwork3, #artwork-s4:checked ~ #artwork4,
+#artwork-s5:checked ~ #artwork5 {
+    box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+    transform: translate3d(0,0,0);
+}
+  
+#artwork-s1:checked ~ #artwork2, #artwork-s2:checked ~ #artwork3,
+#artwork-s3:checked ~ #artwork4, #artwork-s4:checked ~ #artwork5,
+#artwork-s5:checked ~ #artwork1 {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(15%,0,-100px);
+}
+  
+#artwork-s1:checked ~ #artwork3, #artwork-s2:checked ~ #artwork4,
+#artwork-s3:checked ~ #artwork5, #artwork-s4:checked ~ #artwork1,
+#artwork-s5:checked ~ #artwork2 {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(30%,0,-200px);
+}
+  
+#artwork1 { background: url(/portfolio/assets/artworkPortfolio/1.jpg) no-repeat; background-size: cover; background-position: top center;}
+#artwork2 { background: url(/portfolio/assets/artworkPortfolio/2.jpg) no-repeat; background-size: cover; background-position: center;}
+#artwork3 { background: url(/portfolio/assets/artworkPortfolio/3.jpg) no-repeat; background-size: cover; background-position: top center;}
+#artwork4 { background: url(/portfolio/assets/artworkPortfolio/4.jpg) no-repeat; background-size: cover; background-position: center;}
+#artwork5 { background: url(/portfolio/assets/artworkPortfolio/5.jpg) no-repeat; background-size: cover; background-position: center;}
+
+/*  PHOTOGRAPHY */
+#photography {
+    background: gray;
+}
+/*  WRITING */
+
+/*  CONTACT */

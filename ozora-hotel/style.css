@@ -270,7 +270,7 @@ s {
 
 
 /* ALL: */
-.menu1-CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+.menu1-CSSgal >s:target ~ .menu1-prevNext >* {      visibility: hidden;}
 /* ACTIVE: */
 #menu1-s1:target ~ .menu1-prevNext >*:nth-child(1) {visibility: visible;}
 #menu1-s2:target ~ .menu1-prevNext >*:nth-child(2) {visibility: visible;}

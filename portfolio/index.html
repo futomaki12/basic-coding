@@ -7,41 +7,137 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hamburger-menu">
-        <input type="checkbox" id="menu__toggle"/>
-        <label for="menu__toggle" class="hamburger__btn">
-            <span></span>
-        </label>
-
-        <ul class="hamburger__box">
-            <li><a href="#about" class="menu__item">About Me</a></li>
-            <li><a href="#design" class="menu__item">Design</a></li>
-            <li><a href="#artwork" class="menu__item">Artwork</a></li>
-            <li><a href="#photography" class="menu__item">Photography</a></li>
-            <li><a href="#writing" class="menu__item">Writing</a></li>
-            <li><a href="#contact" class="menu__item">Contact</a></li>
-        </ul>
-    </div>
+    <!--HEADER-->
     <div class="header">
-        <div class="title">
-            <h1 class="titlePortfolio">PORT<span>FOLIO</span></h1>
+        <div class="contentWrapper">
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu__toggle"/>
+                <label for="menu__toggle" class="hamburger__btn">
+                <span></span>
+                </label>
+
+                <ul class="hamburger__box">
+                    <li><a href="#about" class="menu__item">About Me</a></li>
+                    <li><a href="#design" class="menu__item">Design</a></li>
+                    <li><a href="#artwork" class="menu__item">Artwork</a></li>
+                    <li><a href="#photography" class="menu__item">Photography</a></li>
+                    <li><a href="#writing" class="menu__item">Writing</a></li>
+                    <li><a href="#contact" class="menu__item">Contact</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <h1 class="titlePortfolio">PORT<span>FOLIO</span></h1>
+            </div>
+            <nav class="navTopLeft">
+                <ul>
+                    <li><a href="#aboutMe">ABOUT ME</a></li>
+                    <li><a href="#design">DESIGN</a></li>
+                    <li><a href="#artwork">ARTWORK</a></li>
+                    <li><a href="#photography">PHOTOGRAPHY</a></li>
+                    <li><a href="#writing">WRITING</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nameTop">
+                <p class="nameTop">MARISA<br>YOHANA</p>
+                <p class="skills">
+                Web Designer<br>
+                Illustrator<br>
+                Content Writer</p>
+            </div>
         </div>
-        <nav class="navTopLeft">
-            <ul>
-                <li><a href="#about">ABOUT ME</a></li>
-                <li><a href="#design">DESIGN</a></li>
-                <li><a href="#artwork">ARTWORK</a></li>
-                <li><a href="#photography">PHOTOGRAPHY</a></li>
-                <li><a href="#writing">WRITING</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
-        <div class="nameTop">
-            <p class="nameTop">MARISA<br>YOHANA</p>
-            <p class="skills">
-            Web Designer<br>
-            Illustrator<br>
-            Content Writer</p>
+    </div>
+
+    <!--ABOUT ME-->
+    <div id="aboutMe">
+        <div class="contentWrapper">
+            <div class="aboutMe-wrap">
+                <div class="title-and-desc">
+                    <h1 class="aboutMe-title"><span></span>ABOUT<br>ME</h1>
+                    <p class="aboutMe__desc">
+                        Japanese Literature student from BINUS University. 
+                        Experienced in various organizational and volunteer positions to hone teamwork and verbal communication skills. 
+                        Have strong research and writing skills as a result of taking a semester-long research track. 
+                        Writing and drawing are my long-time hobbies.
+                        Currently learning photography, web design, and background drawing.
+                    </p>
+                </div>
+                <div class="transparentTitle">
+                    <img src="assets/aboutMe/title-trns.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--DESIGN-->
+    <div id="design">
+        <div class="contentWrapper">
+            <h1 class="title__right">DESIGN</h1>
+            <div class="designContent">
+                <ol>
+                    <li class="design__ozoraResto">
+                        <h2>OZORA RESTO</h2>
+                        <img src="assets/designPortfolio/ozora-resto.png" alt="">
+                        <button>View More</button>
+                    </li>
+                    <li class="design__banner">
+                        <h2>BANNER</h2>
+                        <ul>
+                            <li><img src="assets/designPortfolio/banner/banner__1.jpg" alt="Banner 1"></li>
+                            <li><img src="assets/designPortfolio/banner/banner__2.jpg" alt="Banner 2"></li>
+                            <li><img src="assets/designPortfolio/banner/banner__3.jpg" alt="Banner 3"></li>
+                            <li><img src="assets/designPortfolio/banner/banner__4.jpg" alt="Banner 4"></li>
+                            <li><img src="assets/designPortfolio/banner/banner__5.jpg" alt="Banner 5"></li>
+                            <li><img src="assets/designPortfolio/banner/banner__6.jpg" alt="Banner 6"></li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!--ARTWORK-->
+    <div id="artwork">
+        <div class="contentWrapper">
+            <h1>ARTWORK</h1>
+
+            <div class="artworkShowcase">
+                <section id="artworkSlider">
+                    <input type="radio" name="artworkSlider" id="artwork-s1">
+                    <input type="radio" name="artworkSlider" id="artwork-s2">
+                    <input type="radio" name="artworkSlider" id="artwork-s3" checked>
+                    <input type="radio" name="artworkSlider" id="artwork-s4">
+                    <input type="radio" name="artworkSlider" id="artwork-s5">
+                    
+                    <label for="artwork-s1" id="artwork1"></label>
+                    <label for="artwork-s2" id="artwork2"></label>
+                    <label for="artwork-s3" id="artwork3"></label>
+                    <label for="artwork-s4" id="artwork4"></label>
+                    <label for="artwork-s5" id="artwork5"></label>
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+    <!--PHOTOGRAPHY-->
+    <div id="photography">
+        <div class="contentWrapper">
+        <h1>PHOTOGRAPHY</h1>
+            <div class="photographyCollage">
+                <figure class="collage__item collage__item--1">
+                    <img src="" class="collage__img" alt="">
+                </figure>
+                <figure class="collage__item collage__item--2">
+                    <img src="" class="collage__img" alt="">
+                </figure>
+                <figure class="collage__item collage__item--3">
+                    <img src="" class="collage__img" alt="">
+                </figure>
+                <figure class="collage__item collage__item--4">
+                    <img src="" class="collage__img" alt="">
+                </figure>
+            </div>
         </div>
     </div>
 </body>
